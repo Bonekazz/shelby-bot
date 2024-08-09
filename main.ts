@@ -28,7 +28,7 @@ const client = new Client({intents: [
 
 
 client.once(Events.ClientReady, (readyClient) => {
-    console.log(`logged in as ${readyClient.user.tag}`)
+    console.log(`logged as ${readyClient.user.tag}`)
 });
 
 client.on(Events.MessageCreate, async (message) => {
